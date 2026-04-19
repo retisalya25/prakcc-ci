@@ -1,0 +1,13 @@
+stages:
+  - build
+  - deploybuild:
+  stage: build
+  image: node
+  script:
+    - echo "Di sini Build Docker"
+    - echo "Build Successfully!"test:
+  stage: deploy
+  image: node
+  script:
+  - echo "Di sini Build Docker"
+  - echo "Build Successfully!"
